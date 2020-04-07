@@ -30,7 +30,7 @@ class InitialPage extends React.Component {
   componentDidMount() {
     // mock server to get hardcoded data
     // https://www.mocky.io/
-    axios.get('http://www.mocky.io/v2/5e8b67e12f00005a0088c274')
+    axios.get('https://www.mocky.io/v2/5e8b67e12f00005a0088c274')
     .then((response) => {
       console.log(response);
       if (response && response.data && response.data.members)
