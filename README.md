@@ -1,3 +1,23 @@
+### Using Mocky server
+https://www.mocky.io/
+
+### Syntax Code optimization using
+Lint and Flow
+
+### Minimal usage of Component  
+To reduce the project file size
+
+### Responiveness 
+Adjustable to all device size
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
