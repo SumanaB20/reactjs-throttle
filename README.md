@@ -10,6 +10,8 @@ To reduce the project file size
 ### Responiveness 
 Adjustable to all device size
 
+### Deployed in Heroku server
+https://react-throttle-app.herokuapp.com/
 
 
 
