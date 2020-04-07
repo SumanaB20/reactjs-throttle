@@ -1,0 +1,214 @@
+.sweet-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.list-page-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px;
+  color: #f51616bd;
+}
+.list-page {
+  display: flex;
+}
+/* For overlay */
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+  text-align: center;
+  width: 50%;
+  max-width: 300px;
+}
+
+.container-img {
+  position: relative;
+  padding: 10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.view-overlay {
+  position: absolute;
+  width: 86.5%;
+  left: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.container:hover .view-overlay {
+  opacity: 1;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.user-title {
+  font-size: 12px;
+  margin: 10px;
+}
+
+.view-button {
+  border: none;
+  outline: 0 !important;
+  background: none;
+  font-size: 15px;
+}
+
+/* Menu */
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 20px;
+  height: 15px;
+  left: 36px;
+  /* top: 36px; */
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a478f;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.title-list {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 100px);
+  padding: 15px;
+  margin-top: 70px;
+  position: relative;
+}
+.navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+#navbar-right {
+  float: right;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #f51616bd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #cc3e45;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .list-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar #logo {
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  .navbar a {
+    font-size: 12px;
+  }
+  .title-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 77px);
+    padding: 15px;
+    margin-top: 47px;
+    position: relative;
+  }
+}
